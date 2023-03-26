@@ -1,5 +1,5 @@
-const area = document.querySelector('#area');
-area.value = localStorage.getItem('area');
+const area = document.querySelector('input');
+area.value = localStorage.getItem('input');
 area.oninput = () => {
-    localStorage.setItem('area', area.value)
+    localStorage.setItem('input', area.value)
 };
